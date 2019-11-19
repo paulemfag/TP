@@ -1,0 +1,58 @@
+body{
+  background: url('../img/universe-4609408_1280.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+li:active{
+  color: white;
+}
+
+h1{
+  font-family: 'Odibee Sans', cursive;
+}
+
+#entete_forum{
+  display: block;
+  float: left;
+}
+
+#op{
+  opacity: 0.5;
+}
+
+#btn{
+margin-left: 0.5vh;
+}
+
+#btn1{
+  margin-left: 1.5vh;
+}
+
+.card{
+  margin-left: 15vh;
+  margin-top: 2vh;
+}
+
+.container{
+  margin-top: 5vh;
+}
+
+#color{
+  font-family: 'Odibee Sans', cursive;
+  color: #113E7F;
+  opacity: 0.4;
+  margin-left: 70vh;
+  margin-top: 2vh;
+  width: 73vh;
+}
+
+.pagination{
+  margin-top: 2vh;
+  margin-left: 75vh;
+  opacity: 0.6;
+}
+
+a .s{
+margin-left: 15vh;
+}
