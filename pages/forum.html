@@ -13,120 +13,188 @@
 <body>
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-light bg-secondary">
-    <a class="navbar-brand text-light">Fill</a>
+    <img src="../assets/img/keyboards.png" alt="logo_clavier" height="40" width="40">
+    <a class="navbar-brand text-light"><b>FILL</b></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="accueil.html">Accueil<span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item active">
-          <a class="nav-link text-light" href="#">Link</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link text-light" href="mypage.html">Ma page</a>
-        </li>
-        <li>
-          <a class="btn btn-light text-dark"  href="forum.html" role="button">Forum</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Menu
-          </a>
-          <!-- Bouton menu -->
-          <div class="dropdown-menu bg-secondary" aria-labelledby="navbarDropdown">
-            <a class="dropdown-item" href="#">Paramètres</a>
-            <a class="dropdown-item" href="#">CGU</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item text-danger" href="inscription.html">Me déconnecter<i class="fas fa-sign-out-alt"></i></a>
-          </div>
-        </li>
-      </ul>
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link text-light" href="accueil.html">Accueil<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-light" href="mypage.html">Ma page</a>
+      </li>
+      <!-- Menu Tags -->
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdownTags" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Tags
+        </a>
+        <div class="dropdown-menu" style="background-color: #727d87;" aria-labelledby="navbarDropdownTags">
+          <a class="dropdown-item" href="#">Afro</a>
+          <a class="dropdown-item" href="#">Blues</a>
+          <a class="dropdown-item" href="#">Classique</a>
+          <a class="dropdown-item" href="#">Disco</a>
+          <a class="dropdown-item" href="#">Electro</a>
+          <a class="dropdown-item" href="#">Funk</a>
+          <a class="dropdown-item" href="#">Gospel</a>
+          <a class="dropdown-item" href="#">Kompa</a>
+          <a class="dropdown-item" href="#">Metal</a>
+          <a class="dropdown-item" href="#">Pop</a>
+          <a class="dropdown-item" href="#">Punk</a>
+          <a class="dropdown-item" href="#">Raï</a>
+          <a class="dropdown-item" href="#">Rap</a>
+          <a class="dropdown-item" href="#">Reggae</a>
+          <a class="dropdown-item" href="#">R'n'B</a>
+          <a class="dropdown-item" href="#">Rock</a>
+        </div>
+      </li>
+      <li>
+        <a class="btn btn-light text-dark"  href="forum.html" role="button">Forum</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdownMenu" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Menu
+        </a>
+        <div class="dropdown-menu" style="background-color: #727d87;" aria-labelledby="navbarDropdownMenu">
+          <a class="dropdown-item" href="#">Paramètres</a>
+          <a class="dropdown-item" href="#">CGU</a>
+          <a class="dropdown-item text-danger" href="inscription.html">Me déconnecter <i class="fas fa-sign-out-alt"></i></a>
+        </div>
+      </li>
+    </ul>
   </div>
-</nav><!-- barre et bouton rechercher -->
-<div class="container">
-  <input class="col-9" id="search" type="search" placeholder="Rechercher">
-  <button id="btn" class="btn btn-outline-primary my-2 my-sm-0" type="submit">Rechercher</button>
-  <button id="btn1" type="button" class="btn btn-outline-success" data-toggle="modal" data-target=".modal"><i class="fas fa-plus"></i> Nouveau</button>
-</div>
-<!-- Modal nouveau topic -->
-<div class="modal" tabindex="-1" role="dialog">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content bg-info">
-      <div class="modal-header">
-        <h5 class="modal-title">Nouveau Topic :</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <div class="row">
-        <a>Sujet : </a><input type="text">
-      </div>
-      <div class="row">
-        <a>Description : </a><input type="text">
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-success">Créer</button>
-        <button type="button" class="btn btn-outline-danger"><i class="fas fa-times"></i> Annuler</button>
-      </div>
-    </div>
-  </div>
-</div>
-</div>
-<!-- card entete -->
-<div class="card col-10 bg-info">
-  <div class="card-header">
-    <div class="row">
-    <a class="text-light col-3"><b>Sujet :</b></a>
-    <a class="text-light col-2"><b>Créateur :</b></a>
-    <a class="text-light col-3"><b>Description :</b></a>
-    <a class="text-light col-2"><b>Date de dernière modification :</b></a>
-    <a class="text-light col-2"><b>Date de publication :</b></a>
-</div>
-  <div class="card-body">
-
-    <div class="card col-8 bg-primary">
-      <div class="card-header">
-        <div class="row">
-        <a class="text-light col-3"><b>Sujet :</b></a>
-        <a class="text-light col-2"><b>Créateur :</b></a>
-    </div>
-      <div class="card-body">
-        <h5 class="card-title">Special title treatment</h5>
-        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
-      </div>
-    </div>
-    </div>
-
-    <h5 class="card-title">Special title treatment</h5>
-    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
-  </div>
-</div>
-</div>
-<!-- Pagination -->
-<nav aria-label="Page navigation example">
-  <ul class="pagination">
-<select name="forma" onchange="location = this.value">
-      <option value="forum.html">1</option>
-      <option href="#">2</option>
-      <option href="#">3</option>
-      <option href="#">4</option>
-    </select>
-
-    <!-- Bouton Previous à mettre que sur les autres pages -->
-
-    <li class="page-item"><a class="page-link" href="#">page précédente</a></li>
-    <li class="page-item"><a class="page-link" href="#">1</a></li>
-    <li class="page-item"><a class="page-link" href="#">2</a></li>
-    <li class="page-item"><a class="page-link" href="#">3</a></li>
-    <li class="page-item"><a class="page-link" href="#">Next</a></li>
-  </ul>
 </nav>
+  <!-- barre et bouton rechercher -->
+  <div class="container mt-2">
+    <input  class="col-6" type="search" placeholder="Rechercher">
+    <button id="btn" class="btn btn-outline-primary my-2 my-sm-0 ml-1" type="submit">Rechercher</button>
+    <button id="btn1" type="button" class="btn btn-outline-success col-2" data-toggle="modal" data-target=".modal"><i class="fas fa-plus"></i> Nouveau</button>
+  </div>
+  <!-- Modal nouveau topic -->
+  <div class="modal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content" style="background-color: #BD5C44;">
+        <div class="modal-header">
+          <h5 class="modal-title text-light">Créer un nouveau topic :</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <a>Sujet : </a><input type="text">
+          </div>
+          <div class="row">
+            <a>Description : </a><input type="text">
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-success">Créer</button>
+            <button type="button" class="btn btn-outline-danger"><i class="fas fa-times"></i> Annuler</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- tableau -->
+  <table class="table table-border table-striped table-sm bg-info ml-5 mt-2 col-11">
+    <thead class="text-light">
+      <tr>
+        <th class="ml-auto">Sujet :</th>
+        <th class="ml-auto">Createur :</th>
+        <th class="ml-auto">Description :</th>
+        <th class="ml-auto">Date de dernière modification :</th>
+        <th class="ml-auto">Date de publication :</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Aide pour compo</td>
+        <td>Paulemfag</td>
+        <td>je veux faire ça</td>
+        <td>20/11/2019</td>
+        <td>20/11/2019</td>
+      </tr>
+    </tbody>
+  </table>
+  <button type="button" class="btn btn-outline-danger col-11 ml-5" data-toggle="modal" data-target="#rules"><i class="fas fa-list-ol"></i> Réglement</button>
+
+  <!-- Modal réglement -->
+  <div class="modal fade connexion" id="rules" tabindex="-1" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content" style="background-color: #BD5C44;">
+        <div class="modal-header">
+          <h4 class="modal-title"><i class="fas fa-book"></i> Réglement du Forum :</h4>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+        </div>
+        <div class="modal-body">
+          <p>
+            Ce forum est modéré a posteriori, les messages que vous postez sont directement publiés  sans aucun contrôle
+            préalable. Il est de votre responsabilité de veiller à ce que vos contributions ne portent pas préjudice à autrui et soient
+            conforment à la réglementation en vigueur. Les organisateurs du forum et les modérateurs se réservent le droit de
+            retirer toute contribution qu’ils estimeraient déplacée, inappropriée, contraire aux lois et règlements, à cette charte
+            d’utilisation ou susceptible de porter préjudice directement ou non à des tiers.
+            <br><br>
+            Les messages qui ne sont pas en relation avec les thèmes de discussion ou avec l’objet du forum peuvent être
+            supprimés sans préavis par les modérateurs. Seront aussi supprimées, sans préjudice d'éventuelles poursuites
+            disciplinaires ou judiciaires, les contributions qui :
+            <br><br>
+            1. incitent à la discrimination fondée sur la race, le sexe, la religion, à la haine, à la violence, au racisme ou au révisionnisme
+            <br><br>
+            2. incitent à la commission de délits
+            <br><br>
+            3. sont contraire à l'ordre public et aux bonnes mœurs,
+            <br><br>
+            4. font l’apologie des crimes ou délits et particulièrement du meurtre, viol, des crimes de guerre et crimes contre l'humanité,
+            <br><br>
+            5. ont un caractère injurieux, diffamatoire, insultant ou grossier
+            <br><br>
+            6. portent manifestement atteinte aux droits d’autrui et particulièrement ceux qui portent atteinte à l'honneur ou à la réputation d'autrui,
+            <br><br>
+            7. sont liés à un intérêt manifestement commercial ou ont un but promotionnel sans objet avec le forum.
+            <br><br>
+            L’utilisation d’un pseudonyme ne rend pas anonyme, conformément à la législation les prestataires techniques sont
+            tenus de conserver et de déférer à l’autorité judiciaire les informations de connections (log, IP, date/heure) permettant
+            la poursuite de l’auteur d’une infraction. Toutes les informations nécessaires seront donc conservées pour la durée
+            légale prévue. Elles seront détruites au terme du délai légal de conservation.
+            <br><br>
+            Les organisateurs du forum se réservent le droit d’exclure du forum, de façon temporaire ou définitive, toute personne
+            dont les contributions sont en contradiction avec les règles mentionnées dans le présent document. Les organisateurs
+            pourront transmettre aux autorités de police ou de justice toutes les pièces ou documents postés sur le forum s’ils
+            estiment de leur devoir d’informer les autorités compétentes ou que la législation leur en fait obligation.
+          </p>
+        </div>
+        <div class="modal-footer">
+          <div class="checkbox">
+            <label>
+              <input class="check_list" name="check_list[]" type="checkbox" id="check">
+              J'ai pris connaisance du réglement
+            </label>
+          </div>
+          <button type="button" class="btn btn-outline-danger" data-dismiss="modal" disabled="" id="terms"><i class="fas fa-times"></i> Fermer</button>
+        </div>
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+  </div><!-- /.modal -->
+
+
+  <!-- Pagination -->
+  <!-- <nav aria-label="Page navigation example">
+  <ul class="pagination col-12"> -->
+  <!-- Bouton Previous à mettre que sur les autres pages -->
+  <!-- <li class="page-item"><a class="page-link" href="#">page précédente</a></li>
+  <select name="forma" onchange="location = this.value">
+  <option value="forum.html">1</option>
+  <option href="#">2</option>
+  <option href="#">3</option>
+  <option href="#">4</option>
+</select>
+<li class="page-item"><a class="page-link" href="#">Next</a></li>
+</ul>
+</nav> -->
+<script src="../assets/js/jquery-3.3.1.min.js"></script>
+<script src="../assets/js/script.js"></script>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
