@@ -1,19 +1,9 @@
-#btn1{
-  float: right;
-}
-
 body{
   background: url('../img/universe-4609408_1280.jpg');
   background-size: cover;
   background-repeat: no-repeat;
 }
 
-footer{
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-}
 
 h1{
   font-family: 'Odibee Sans', cursive;
@@ -23,20 +13,19 @@ h1{
   opacity: 0.5;
 }
 
-#connexion{
-  float: left;
-}
-
-#color{
-  font-family: 'Odibee Sans', cursive;
-  color: #113E7F;
-  margin-left: 70vh;
-  margin-top: 2vh;
-  width: 73vh;
+#big_text{
+  height: 60px;
 }
 
 .pagination{
   position: static;
   margin-left: 75vh;
   opacity: 0.6;
+}
+
+footer{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
 }

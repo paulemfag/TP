@@ -13,64 +13,66 @@
 <body>
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg navbar-light bg-secondary">
-    <img src="../assets/img/keyboards.png" alt="logo_clavier" height="40" width="40">
+    <img src="../assets/img/keyboards.png" alt="logo_clavier" height="40" width="60">
     <a class="navbar-brand text-light"><b>FILL</b></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav">
-      <li class="nav-item active">
-        <a class="nav-link text-light" href="accueil.html">Accueil<span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link text-light" href="mypage.html">Ma page</a>
-      </li>
-      <!-- Menu Tags -->
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdownTags" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Tags
-        </a>
-        <div class="dropdown-menu" style="background-color: #727d87;" aria-labelledby="navbarDropdownTags">
-          <a class="dropdown-item" href="#">Afro</a>
-          <a class="dropdown-item" href="#">Blues</a>
-          <a class="dropdown-item" href="#">Classique</a>
-          <a class="dropdown-item" href="#">Disco</a>
-          <a class="dropdown-item" href="#">Electro</a>
-          <a class="dropdown-item" href="#">Funk</a>
-          <a class="dropdown-item" href="#">Gospel</a>
-          <a class="dropdown-item" href="#">Kompa</a>
-          <a class="dropdown-item" href="#">Metal</a>
-          <a class="dropdown-item" href="#">Pop</a>
-          <a class="dropdown-item" href="#">Punk</a>
-          <a class="dropdown-item" href="#">Raï</a>
-          <a class="dropdown-item" href="#">Rap</a>
-          <a class="dropdown-item" href="#">Reggae</a>
-          <a class="dropdown-item" href="#">R'n'B</a>
-          <a class="dropdown-item" href="#">Rock</a>
-        </div>
-      </li>
-      <li>
-        <a class="btn btn-light text-dark"  href="forum.html" role="button">Forum</a>
-      </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdownMenu" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Menu
-        </a>
-        <div class="dropdown-menu" style="background-color: #727d87;" aria-labelledby="navbarDropdownMenu">
-          <a class="dropdown-item" href="#">Paramètres</a>
-          <a class="dropdown-item" href="#">CGU</a>
-          <a class="dropdown-item text-danger" href="inscription.html">Me déconnecter <i class="fas fa-sign-out-alt"></i></a>
-        </div>
-      </li>
-    </ul>
-  </div>
-</nav>
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link text-light" href="accueil.html">Accueil<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-light" href="mypage.html">Ma page</a>
+        </li>
+        <!-- Menu Tags -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdownTags" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Tags
+          </a>
+          <div class="dropdown-menu" style="background-color: #727d87;" aria-labelledby="navbarDropdownTags">
+            <a class="dropdown-item" href="#">Afro</a>
+            <a class="dropdown-item" href="#">Blues</a>
+            <a class="dropdown-item" href="#">Classique</a>
+            <a class="dropdown-item" href="#">Disco</a>
+            <a class="dropdown-item" href="#">Electro</a>
+            <a class="dropdown-item" href="#">Funk</a>
+            <a class="dropdown-item" href="#">Gospel</a>
+            <a class="dropdown-item" href="#">Kompa</a>
+            <a class="dropdown-item" href="#">Metal</a>
+            <a class="dropdown-item" href="#">Pop</a>
+            <a class="dropdown-item" href="#">Punk</a>
+            <a class="dropdown-item" href="#">Raï</a>
+            <a class="dropdown-item" href="#">Rap</a>
+            <a class="dropdown-item" href="#">Reggae</a>
+            <a class="dropdown-item" href="#">R'n'B</a>
+            <a class="dropdown-item" href="#">Rock</a>
+          </div>
+        </li>
+        <li>
+          <a class="btn btn-light text-dark"  href="forum.html" role="button">Forum</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdownMenu" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Menu
+          </a>
+          <div class="dropdown-menu" style="background-color: #727d87;" aria-labelledby="navbarDropdownMenu">
+            <a class="dropdown-item" href="#">Paramètres</a>
+            <a class="dropdown-item" href="#">CGU</a>
+            <a class="dropdown-item text-danger" href="inscription.html">Me déconnecter <i class="fas fa-sign-out-alt"></i></a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
   <!-- barre et bouton rechercher -->
-  <div class="container mt-2">
-    <input  class="col-6" type="search" placeholder="Rechercher">
-    <button id="btn" class="btn btn-outline-primary my-2 my-sm-0 ml-1" type="submit">Rechercher</button>
-    <button id="btn1" type="button" class="btn btn-outline-success col-2" data-toggle="modal" data-target=".modal"><i class="fas fa-plus"></i> Nouveau</button>
+  <div class="container mt-2 12-col">
+    <div class="row" style="justify-content: center;">
+      <input  class="col-5" type="search" placeholder="Rechercher">
+      <button class="btn btn-outline-primary my-2 my-sm-0 ml-2 col-2" type="submit">Rechercher</button>
+      <button class="btn btn-outline-success ml-1 col-3" type="button" data-toggle="modal" data-target=".modal"><i class="fas fa-plus"></i> Nouveau</button>
+    </div>
   </div>
   <!-- Modal nouveau topic -->
   <div class="modal" tabindex="-1" role="dialog">
@@ -83,43 +85,55 @@
           </button>
         </div>
         <div class="modal-body">
-          <div class="row">
-            <a>Sujet : </a><input type="text">
+          <label style="justify-content: center;">Sujet :</label>
+          <div class="row col-12" style="justify-content: center;">
+            <input type="text" placeholder="Sujet">
           </div>
-          <div class="row">
-            <a>Description : </a><input type="text">
+          <label style="justify-content: center;">Description : </label>
+          <div class="row col-12 " style="justify-content: center;">
+            <input type="text" placeholder="Description">
+          </div>
+          <label style="justify-content: center;">Votre message :</label>
+          <div id="big_text" class="row col-12  mb-2" style="justify-content: center;">
+            <input type="text" placeholder="premier message">
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-success">Créer</button>
-            <button type="button" class="btn btn-outline-danger"><i class="fas fa-times"></i> Annuler</button>
+            <button type="button" class="btn btn-outline-danger" data-dismiss="modal"><i class="fas fa-times"></i> Annuler</button>
           </div>
         </div>
       </div>
     </div>
   </div>
   <!-- tableau -->
-  <table class="table table-border table-striped table-sm bg-info ml-5 mt-2 col-11">
-    <thead class="text-light">
-      <tr>
-        <th class="ml-auto">Sujet :</th>
-        <th class="ml-auto">Createur :</th>
-        <th class="ml-auto">Description :</th>
-        <th class="ml-auto">Date de dernière modification :</th>
-        <th class="ml-auto">Date de publication :</th>
-      </tr>
-    </thead>
+  <div class="row col-12" style="justify-content: center">
+  <table class="table table-border table-striped table-sm bg-info mt-2 col-10" style="justify-content: center;">
+      <thead class="text-light">
+        <tr>
+          <th>Sujet :</th>
+          <th>Createur :</th>
+          <th>Description :</th>
+          <th>Date de dernière modification :</th>
+          <th>Date de publication :</th>
+        </tr>
+      </thead>
     <tbody>
       <tr>
         <td>Aide pour compo</td>
         <td>Paulemfag</td>
-        <td>je veux faire ça</td>
+        <td>je veux faire ça mais ça marche pas bien donc</td>
         <td>20/11/2019</td>
         <td>20/11/2019</td>
       </tr>
     </tbody>
   </table>
-  <button type="button" class="btn btn-outline-danger col-11 ml-5" data-toggle="modal" data-target="#rules"><i class="fas fa-list-ol"></i> Réglement</button>
-
+</div>
+  <!-- bouton réglement -->
+  <div class="container col-12">
+    <div class="row" style="justify-content: center;">
+      <button type="button" class="btn btn-outline-danger col-10" data-toggle="modal" data-target="#rules"><i class="fas fa-list-ol"></i> Réglement</button>
+    </div>
+  </div>
   <!-- Modal réglement -->
   <div class="modal fade connexion" id="rules" tabindex="-1" role="dialog">
     <div class="modal-dialog">
@@ -194,7 +208,7 @@
 </ul>
 </nav> -->
 <script src="../assets/js/jquery-3.3.1.min.js"></script>
-<script src="../assets/js/script.js"></script>
+<script src="../assets/js/forum.js"></script>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>

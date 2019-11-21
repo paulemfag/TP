@@ -6,43 +6,79 @@
   <title>Bienvenue sur Fill !</title>
   <link rel="stylesheet" href="../assets/css/style.css" />
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <!-- CDN font-awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+  <!-- CDN google fonts -->
   <link href="https://fonts.googleapis.com/css?family=Odibee+Sans&display=swap" rel="stylesheet">
 </head>
 <body>
   <!-- Navbar bootstrap -->
   <nav class="navbar navbar-expand-lg navbar-light bg-secondary">
-    <img src="../assets/img/keyboards.png" alt="logo_clavier" height="40" width="40">
-    <a class="navbar-brand text-light"><b>FILL</b></a>
+    <img src="../assets/img/keyboards.png" alt="logo_clavier" height="40" width="60">
+    <a class="navbar-brand text-light" data-toggle="modal" data-target="#presentation"><b>FILL</b></a>
   </nav>
-  <div class="container bg-light mt-2 opacity">
-    <h1 class="text-primary text-center col-6"><b>Connexion :</b></h1>
+  <!-- modal présentation -->
+  <div class="modal fade" tabindex="-1" role="dialog" id="presentation">
+    <div class="modal-dialog">
+      <div class="modal-content bg-secondary">
+        <div class="modal-header">
+          <h4 class="modal-title ml-auto text-light">Bienvenue sur Fill !</h4>
+          <button type="button" class="close text-danger" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+        </div>
+        <div class="modal-body">
+          <p>One fine body…</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-outline-danger" data-dismiss="modal"><i class="fas fa-times"></i> Close</button>
+        </div>
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+  </div><!-- /.modal -->
+  <!-- Form Connexion -->
+  <div class="container text-center bg-light mt-2 opacity">
+    <h1 class="text-primary text-center ml-auto mr-auto">Connexion :</h1>
   </div>
   <form>
-    <row class="container">
-    <input class="col-2 text-center align-center"type="text" placeholder="Pseudo">
-    <input class="col-2 text-center align-center"type="email" placeholder="Adrese mail">
-    <input class="col-2 text-center align-center"type="password" placeholder="**********">
-    <button class="col-2 text-center align-center"type="submit">Me connecter</button>
-  </row>
+    <div class="container">
+      <input class="col-12 text-center mt-1" type="text" placeholder="Pseudo">
+      <input class="col-12 text-center mt-1" type="email" placeholder="Adrese mail">
+      <input class="col-12 text-center mt-1" type="password" placeholder="Mot de passe">
+      <button class="btn btn-outline-primary col-12 text-center mt-1" type="submit"><b>Me connecter</b></button>
+    </div>
   </form>
-  <div class="container bg-light opacity">
-    <h1 class="text-primary text-center col-12">Inscription :</h1>
+  <!-- form Inscription -->
+  <div class="container text-center bg-light mt-2 opacity">
+    <h1 class="text-primary ml-auto mr-auto">Inscription :</h1>
   </div>
   <form>
-    <a class="text-light">Je suis : </a>
-    <select>
-      <option>----</option>
-      <option>un particulier</option>
-      <option>un compositeur</option>
-    </select>
-    <input type="text" placeholder="Pseudo">
-    <input type="email" placeholder="Adresse mail">
-    <input type="password" placeholder="**********">
-    <input type="password" placeholder="**********">
-    <button type="submit">M'inscrire</button>
+    <div class="container">
+      <a class="text-light col-12">Je suis : </a>
+      <select class="col-12">
+        <option>----</option>
+        <option>un particulier</option>
+        <option>un compositeur</option>
+      </select>
+      <input  class="col-12 text-center mt-1" type="text" placeholder="Pseudo">
+      <input  class="col-12 text-center mt-1" type="email" placeholder="Adresse mail">
+      <input  class="col-12 text-center mt-1" type="password" placeholder="Mot de passe">
+      <input  class="col-12 text-center mt-1" type="password" placeholder="Confirmation du mot de passe">
+      <button  class="btn btn-outline-primary col-12 text-center mt-1" type="submit"><b>M'inscrire</b></button>
+    </div>
   </form>
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-</body>
-</html>
+  <footer class="page-footer font-small text-light bg-secondary">
+    <!-- logos hrefs -->
+    <div class="container-fluid text-center text-md-center">
+      <a href="https://www.facebook.com"><img src="../assets/img/facebook-logo.png" width="40" height="30" alt="logo_fb"></a>
+      <a href="https://www.twitter.com"><img src="../assets/img/logo_twitter.png" alt="logo_twitter" height="20" width="25"></a>
+    </div>
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-1"><img src="../assets/img/keyboards.png" alt="logo_clavier" height="30" width="50">
+      FILL © 2019</div>
+    </footer>
+    <script src="../assets/js/inscription.js"></script>
+    <script src="../assets/js/jquery-3.3.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+  </html>

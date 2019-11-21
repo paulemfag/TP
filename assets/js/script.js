@@ -3,14 +3,4 @@ $(function(){
 $(document).ready(function () {
 $('#rules').modal('show')
 })
-// validation réglement
-  function check() {
-    if(document.getElementById('#check').checked = true){
-      $('#terms').prop('disabled', false);
-
-    } else {
-      $('#terms').prop('enabled', true);
-    }
-  };
-
 })
