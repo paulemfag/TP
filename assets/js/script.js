@@ -1,6 +1,6 @@
 $(function(){
-// Modal qui s'ouvre sur la page forum
+// Modal qui s'ouvre auto
 $(document).ready(function () {
-$('#rules').modal('show')
+$('#playlist').modal('show')
 })
 })

@@ -17,52 +17,37 @@
     <img src="../assets/img/keyboards.png" alt="logo_clavier" height="40" width="60">
     <a class="navbar-brand text-light" data-toggle="modal" data-target="#presentation"><b>FILL</b></a>
   </nav>
-  <!-- modal présentation -->
-  <div class="modal fade" tabindex="-1" role="dialog" id="presentation">
-    <div class="modal-dialog">
-      <div class="modal-content bg-secondary">
-        <div class="modal-header">
-          <h4 class="modal-title ml-auto text-light">Bienvenue sur Fill !</h4>
-          <button type="button" class="close text-danger" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
-        </div>
-        <div class="modal-body">
-          <p>One fine body…</p>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-outline-danger" data-dismiss="modal"><i class="fas fa-times"></i> Close</button>
-        </div>
-      </div><!-- /.modal-content -->
-    </div><!-- /.modal-dialog -->
-  </div><!-- /.modal -->
   <!-- Form Connexion -->
   <div class="container text-center bg-light mt-2 opacity">
     <h1 class="text-primary text-center ml-auto mr-auto">Connexion :</h1>
   </div>
+  <div id="login">
   <form>
     <div class="container">
-      <input class="col-12 text-center mt-1" type="text" placeholder="Pseudo">
-      <input class="col-12 text-center mt-1" type="email" placeholder="Adrese mail">
-      <input class="col-12 text-center mt-1" type="password" placeholder="Mot de passe">
-      <button class="btn btn-outline-primary col-12 text-center mt-1" type="submit"><b>Me connecter</b></button>
+      <input id="pseudo" class="col-12 text-center mt-1" type="text" placeholder="Pseudo" required maxlength="15">
+      <input id="mailBox" class="col-12 text-center mt-1" type="email" placeholder="Adrese mail" required>
+      <input id="password" class="col-12 text-center mt-1" type="password" placeholder="Mot de passe" required>
+      <button id="login" class="btn btn-outline-primary col-12 text-center mt-1" type="submit"><b>Me connecter</b></button>
     </div>
   </form>
+</div>
   <!-- form Inscription -->
   <div class="container text-center bg-light mt-2 opacity">
     <h1 class="text-primary ml-auto mr-auto">Inscription :</h1>
   </div>
-  <form>
+  <form id="suscribers">
     <div class="container">
       <a class="text-light col-12">Je suis : </a>
       <select class="col-12">
-        <option>----</option>
         <option>un particulier</option>
         <option>un compositeur</option>
       </select>
-      <input  class="col-12 text-center mt-1" type="text" placeholder="Pseudo">
-      <input  class="col-12 text-center mt-1" type="email" placeholder="Adresse mail">
-      <input  class="col-12 text-center mt-1" type="password" placeholder="Mot de passe">
-      <input  class="col-12 text-center mt-1" type="password" placeholder="Confirmation du mot de passe">
-      <button  class="btn btn-outline-primary col-12 text-center mt-1" type="submit"><b>M'inscrire</b></button>
+      <input  id="pseudo2" class="col-6 text-center mt-1" type="text" placeholder="Pseudo" required maxlength="15">
+      <label class="text-light"></label>
+      <input  id="mailBox1" class="col-12 text-center mt-1" type="email" placeholder="Adresse mail" required>
+      <input  id="password1" class="col-12 text-center mt-1" type="password" placeholder="Mot de passe" required>
+      <input  id="password2" class="col-12 text-center mt-1" type="password" placeholder="Confirmation du mot de passe" required>
+      <button id="suscribe" class="btn btn-outline-primary col-12 text-center mt-1" type="submit"><b>M'inscrire</b></button>
     </div>
   </form>
   <footer class="page-footer font-small text-light bg-secondary">
