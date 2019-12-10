@@ -5,8 +5,7 @@
 //   });
 // })
 
-
-$('#suscribe').click(function(event){
+$('#suscribe').click(function(){
   var pseudo = $('#pseudo2').val();
   var mailbox = $('#mailbox1').val();
   var pass1 = $('#password1').val();
@@ -17,12 +16,12 @@ $('#suscribe').click(function(event){
     console.log(checkMailBox);
     var checkPassword = /^([0-9]{4})-([0-9]{2})-([0-9]{2})$/.test(pass1);
     console.log(checkPassword);
-  if (checkPseudo && checkMailBox && checkPassword == true){
-  result = 'Je suis '
-  }
-  else{
-  epreventDefault('#suscribe')
-  }
+  // if (checkPseudo && checkMailBox && checkPassword == true){
+  // result =
+  // }
+  // else{
+  // epreventDefault('#suscribe')
+  // }
 })
 
 //   $('form').on('submit', function(event){
