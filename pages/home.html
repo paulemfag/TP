@@ -17,35 +17,44 @@
     <img src="../assets/img/keyboards.png" alt="logo_clavier" height="40" width="60">
     <a class="navbar-brand text-light" data-toggle="modal" data-target="#presentation"><b>FILL</b></a>
     <!-- boutons inscription et connexion -->
-    <ul class="ml-auto">
-      <button id="suscribebtn" class="btn btn-outline-primary my-2 my-sm-0">Inscription</button>
-      <button id="connectbtn" class="btn btn-outline-success ml-1">Connexion</button>
-    </ul>
-  </nav>
-    <div id="suscribeItems">
-    <div class="container text-center bg-light mt-2 opacity">
-      <h1 class="text-primary ml-auto mr-auto">Inscription :</h1>
-    </div>
-    <!-- form Inscription -->
-    <form id="suscribers">
-      <div class="container">
-        <a class="text-light col-12">Je suis : </a>
-        <select class="col-12"required>
-          <option>un particulier</option>
-          <option>un compositeur</option>
-        </select>
-        <input  id="pseudo2" class="col-12 text-center mt-1" type="text" placeholder="Pseudo" required maxlength="15">
-        <input  id="mailBox1" class="col-12 text-center mt-1" type="email" placeholder="Adresse mail" required>
-        <input  id="password1" class="col-12 text-center mt-1" type="password" placeholder="Mot de passe" required>
-        <input  id="password2" class="col-12 text-center mt-1" type="password" placeholder="Confirmation du mot de passe" required>
-        <input id="suscribe" class="btn btn-outline-primary col-12 text-center mt-1"  value="M'inscrire" type="button"><b>M'inscrire</b></input>
+      <div class="ml-auto">
+        <button id="suscribebtn" class="btn btn-outline-primary my-2 my-sm-0">Inscription</button>
+        <button id="connectbtn" class="btn btn-outline-success ml-1">Connexion</button>
       </div>
+  </nav>
+<div id="suscribeItems">
+  <div class="container text-center bg-light mt-2 opacity">
+    <h1 class="text-primary ml-auto mr-auto">Inscription :</h1>
+  </div>
+    <!-- form Inscription -->
+  <form id="suscribers">
+    <div class="container">
+      <div class="col-12 text-center">
+        <a class="text-light col-12 text-center">Je suis : </a>
+          <input id="compositor" type="radio">
+          <label class="text-light" for="compositor">un compositeur</label>
+          <input id="particular" type="radio">
+          <label class="text-light" for="compositor">un particulier</label>
+      </div>
+      <!-- <select class="col-12"required>
+        <option>un particulier</option>
+        <option>un compositeur</option>
+      </select> -->
+      <input  id="lastName" class="col-12 text-center mt-1" type="text" placeholder="Nom" required>
+      <input  id="firstName" class="col-12 text-center mt-1" type="text" placeholder="Prénom" required>
+      <input  id="pseudo2" class="col-12 text-center mt-1" type="text" placeholder="Pseudo" required maxlength="15">
+      <input  id="mailBox1" class="col-12 text-center mt-1" type="email" placeholder="Adresse mail" required>
+      <input  id="password1" class="col-12 text-center mt-1" type="password" placeholder="Mot de passe" required>
+      <input  id="password2" class="col-12 text-center mt-1" type="password" placeholder="Confirmation du mot de passe" required>
+      <button id="suscribe" class="btn btn-outline-primary col-12 text-center mt-1"  value="M'inscrire" type="submit"><b>M'inscrire</b></button>
     </div>
-    <div id="connectItems">
-    <div class="container text-center bg-light mt-2 opacity">
-      <h1 class="text-primary text-center ml-auto mr-auto">Connexion :</h1>
-    </div>
-    <div id="connect">
+  </form>
+</div>
+<div id="connectItems">
+  <div class="container text-center bg-light mt-2 opacity">
+    <h1 class="text-primary text-center ml-auto mr-auto">Connexion :</h1>
+  </div>
+  <div id="connect">
       <!-- Form Connexion -->
     <form>
       <div class="container">
@@ -57,23 +66,22 @@
     </form>
   </div>
 </div>
-    </form>
-    <footer class="page-footer font-small text-light bg-secondary">
+<footer class="page-footer font-small text-light bg-secondary">
       <!-- logos hrefs -->
-      <div class="container-fluid text-center text-md-center">
-        <a href="https://www.facebook.com"><img src="../assets/img/facebook-logo.png" width="40" height="30" alt="logo_fb"></a>
-        <a href="https://www.twitter.com"><img src="../assets/img/logo_twitter.png" alt="logo_twitter" height="20" width="25"></a>
-      </div>
+  <div class="container-fluid text-center text-md-center">
+    <a href="https://www.facebook.com"><img src="../assets/img/facebook-logo.png" width="40" height="30" alt="logo_fb"></a>
+    <a href="https://www.twitter.com"><img src="../assets/img/logo_twitter.png" alt="logo_twitter" height="20" width="25"></a>
+  </div>
     <!-- Copyright -->
-    <div class="footer-copyright text-center py-1">
-      <img src="../assets/img/keyboards.png" alt="logo_clavier" height="30" width="50">
+  <div class="footer-copyright text-center py-1">
+    <img src="../assets/img/keyboards.png" alt="logo_clavier" height="30" width="50">
       FILL 2019
-    </div>
-    </footer>
-    <script src="../assets/js/jquery-3.3.1.min.js"></script>
-    <script src="../assets/js/home.js"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  </body>
-  </html>
+  </div>
+</footer>
+<script src="../assets/js/jquery-3.3.1.min.js"></script>
+<script src="../assets/js/home.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
