@@ -15,8 +15,11 @@
   <!-- Navbar bootstrap -->
   <nav class="navbar navbar-expand-lg navbar-light bg-secondary col-12">
     <img src="../assets/img/keyboards.png" alt="logo_clavier" height="40" width="60">
-    <a class="navbar-brand text-light" data-toggle="modal" data-target="#presentation"><b>FILL</b></a>
+    <a class="navbar-brand text-light" data-toggle="modal" data-target="#presentation" style="font-weight: bold;">FILL</a>
     <!-- boutons inscription et connexion -->
+    <div class="ml-auto">
+      <p class="text-light" style="font-family: 'Odibee Sans', cursive; font-size: 20px;"><i>make it feel</i></p>
+    </div>
       <div class="ml-auto">
         <button id="suscribebtn" class="btn btn-outline-primary my-2 my-sm-0">Inscription</button>
         <button id="connectbtn" class="btn btn-outline-success ml-1">Connexion</button>
@@ -31,15 +34,11 @@
     <div class="container">
       <div class="col-12 text-center">
         <a class="text-light col-12 text-center">Je suis : </a>
-          <input id="compositor" type="radio">
+          <input id="compositor" type="radio" name="type">
           <label class="text-light" for="compositor">un compositeur</label>
-          <input id="particular" type="radio">
-          <label class="text-light" for="compositor">un particulier</label>
+          <input id="particular" type="radio" name="type">
+          <label class="text-light" for="particular">un particulier</label>
       </div>
-      <!-- <select class="col-12"required>
-        <option>un particulier</option>
-        <option>un compositeur</option>
-      </select> -->
       <input  id="lastName" class="col-12 text-center mt-1" type="text" placeholder="Nom" required>
       <input  id="firstName" class="col-12 text-center mt-1" type="text" placeholder="Prénom" required>
       <input  id="pseudo2" class="col-12 text-center mt-1" type="text" placeholder="Pseudo" required maxlength="15">
@@ -61,6 +60,9 @@
         <input id="pseudo" class="col-12 text-center mt-1" type="text" placeholder="Pseudo" required maxlength="15">
         <input id="mailBox" class="col-12 text-center mt-1" type="email" placeholder="Adrese mail" required>
         <input id="password" class="col-12 text-center mt-1" type="password" placeholder="Mot de passe" required>
+        <div class="row col-12 ml-auto mr-auto">
+          <a id="noAccount" href="#">je n'ai pas encore de compte</a><p class="text-primary"> | </p><a href="#">Mot de passe oublié</a>
+        </div>
         <input id="login" value="Me connecter" class="btn btn-outline-primary col-12 text-center mt-1" type="submit">
       </div>
     </form>

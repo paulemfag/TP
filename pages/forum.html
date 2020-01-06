@@ -26,6 +26,15 @@
         <li class="nav-item">
           <a class="nav-link text-light" href="mypage.html">Ma page</a>
         </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdownPlaylist" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Playlists
+          </a>
+          <div class="dropdown-menu" style="background-color: #727d87;" aria-labelledby="navbarDropdownPlaylist">
+            <a class="dropdown-item" data-toggle="modal" data-target=".modal"><i class="fas fa-plus"></i> Nouvelle playlist</a>
+            <a class="dropdown-item" data-toggle="modal" data-target=".modal">Ma playlist</a>
+          </div>
+        </li>
         <!-- Menu Tags -->
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdownTags" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -50,9 +59,8 @@
             <a class="dropdown-item" href="#">Rock</a>
           </div>
         </li>
-        <li>
-          <a class="btn btn-light text-dark"  href="forum.html" role="button">Forum</a>
-        </li>
+      </ul>
+      <ul class="navbar-nav ml-auto mr-4">
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdownMenu" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             Menu
@@ -63,7 +71,14 @@
             <a class="dropdown-item text-danger" href="home.html">Me déconnecter <i class="fas fa-sign-out-alt"></i></a>
           </div>
         </li>
+        <li>
+          <a class="btn btn-light text-dark"  href="forum.html" role="button">Forum</a>
+        </li>
       </ul>
+      <!-- <form class="form-inline my-2 my-lg-0">
+     <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+     <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Search</button>
+   </form> -->
     </div>
   </nav>
   <!-- barre et bouton rechercher -->

@@ -10,7 +10,7 @@
   <!-- CDN font-awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
   <!-- CDN google fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Odibee+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Odibee+Sans&display=swap">
 </head>
 <body>
   <!-- Navbar bootstrap -->
@@ -35,6 +35,37 @@
           <div class="dropdown-menu" style="background-color: #727d87;" aria-labelledby="navbarDropdownPlaylist">
             <a class="dropdown-item" data-toggle="modal" data-target=".modal"><i class="fas fa-plus"></i> Nouvelle playlist</a>
             <a class="dropdown-item" data-toggle="modal" data-target=".modal">Ma playlist</a>
+          </div>
+          <!-- Modal nouvelle playlist -->
+          <div class="modal" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content" style="background-color: #BD5C44;">
+                <div class="modal-header">
+                  <h5 class="modal-title text-light">Créer un nouveau topic :</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <label style="justify-content: center;">Sujet :</label>
+                  <div class="row col-12" style="justify-content: center;">
+                    <input type="text" placeholder="Sujet">
+                  </div>
+                  <label style="justify-content: center;">Description : </label>
+                  <div class="row col-12 " style="justify-content: center;">
+                    <input type="text" placeholder="Description">
+                  </div>
+                  <label style="justify-content: center;">Votre message :</label>
+                  <div id="big_text" class="row col-12  mb-2" style="justify-content: center;">
+                    <input type="text" placeholder="premier message">
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-success">Créer</button>
+                    <button type="button" class="btn btn-outline-danger" data-dismiss="modal"><i class="fas fa-times"></i> Annuler</button>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </li>
         <!-- Menu Tags -->
@@ -92,27 +123,6 @@
           <button type="button" class="close text-danger" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
         </div>
         <div class="modal-body">
-          <form>
-            <div class="row">
-            </div>
-          </form>
-          <p>One fine body…</p>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-outline-danger" data-dismiss="modal"><i class="fas fa-times"></i> Close</button>
-        </div>
-      </div><!-- /.modal-content -->
-    </div><!-- /.modal-dialog -->
-  </div><!-- /.modal -->
-  <!-- modal Accueil -->
-  <div class="modal fade" tabindex="-1" role="dialog" id="Accueil">
-    <div class="modal-dialog">
-      <div class="modal-content" style="background-color: #727d87;">
-        <div class="modal-header">
-          <h4 class="modal-title ml-auto text-light" style="font-family: 'Odibee Sans', cursive;">Bienvenue sur Fill !</h4>
-          <button type="button" class="close text-danger" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
-        </div>
-        <div class="modal-body" style="font-family: 'Odibee Sans', cursive;">
           <form>
             <div class="row">
             </div>
